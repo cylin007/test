@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+
+    /* ---------- Header ---------- */
+    header { background: #fff; padding: 2rem 1rem; box-shadow: 0 2px 4px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 10; }
+    h1 { font-size: 2rem; }
+    nav ul { list-style: none; display: flex; gap: 1rem; margin-top: 0.5rem; }
+    nav a { text-decoration: none; color: #555; padding: 0.5rem 1rem; border-radius: 4px; transition: background .2s; }
+    nav a:hover { background: #f0f0f0; }
+
+    /* ---------- Hero ---------- */
+    .hero { text-align: center; padding: 6rem 1rem; background: linear-gradient(120deg,#7f7fd5,#86a8e7,#91eae4); color: white; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    /* ---------- Sections ---------- */
+    .section { padding: 4rem 1rem; max-width: 1100px; margin: auto; }
+    .section-title { font-size: 1.8rem; margin-bottom: 2rem; text-align: center; }
+
+    /* ---------- Project Grid ---------- */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,.1); transition: transform .2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card-content { padding: 1rem; }
+
+    /* ---------- Footer ---------- */
+    footer { text-align: center; padding: 2rem; background: #222; color: white; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jane Doe</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm Jane 👋</h2>
+    <p>A product designer crafting delightful experiences.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h3 class="section-title">Featured Projects</h3>
+    <div class="grid">
+      <!-- Project Card 1 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/400x300?app" alt="Project 1">
+        <div class="card-content">
+          <h4>Project One</h4>
+          <p>Short project description goes here.</p>
+        </div>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/401x301?dashboard" alt="Project 2">
+        <div class="card-content">
+          <h4>Project Two</h4>
+          <p>Short project description goes here.</p>
+        </div>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/featured/402x302?mobile" alt="Project 3">
+        <div class="card-content">
+          <h4>Project Three</h4>
+          <p>Short project description goes here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h3 class="section-title">About Me</h3>
+    <p>I'm a product designer with 9 years of experience in UI/UX, design systems, and AI‑assisted workflows. I enjoy turning complex problems into elegant solutions.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
